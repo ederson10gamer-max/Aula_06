@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.Css">
+    <title>ProductScalar</title>
 </head>
-<body>
-    <p> Comentando algo para que o push funcione</p>
+<body> <!-- CORREÇÃO 1: O body DEVE abrir aqui, logo após o fechamento do head -->
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="bar-logo">
+        <div class="container-fluxo">
+            <a class="nav-brand" href="#">BarraNav</a>
+            <li>link-navbar</li>
+            <li>link-navbar</li>
+        </div>
+    </nav>
+
+    <!-- SIDEBAR (MENU LATERAL) -->
+    <!-- MUDANÇA 2: Colocamos uma classe 'oculto' para o CSS esconder este menu por padrão -->
+    <nav id="sidebar" class="sidebar oculto">
+        <h3>Menu Lateral</h3>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+        </ul>
+          
+    </nav>
+
+    <!-- BOTÃO DO MENU OCULTO -->
+    <div>
+        <button id="btn-mostrar" class="btn-oculto">Mostrar-menu</button>
+        <button id="btn-ocultar" class="btn-ocultar"> Ocultar Menu</button>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- MUDANÇA 3: Adicionamos a classe 'grid-principal' aqui para aplicar o Grid e o Gap no CSS -->
+    <main class="grid-principal">
+        
+        <!-- Bloco 1: Imagem Ilustrativa -->
+        <article id="imagem_ilust">
+            <img src="https://gstatic.com" alt="imagem inicio">
+            <h3>Imagem de Destaque</h3>
+        </article>
+
+        <!-- Bloco 2: O Carrossel/Rolagem Horizontal -->
+        <!-- MUDANÇA 4: Agrupamos os itens que vão rolar dentro de um contêiner específico -->
+        <section class="carrossel-horizontal">
+            <article class="card-item">
+                <img src="https://gstatic.com" alt="Montanha">
+                <h3>Imagem 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article> 
+
+            <article class="card-item">
+                <img src="https://gstatic.com" alt="Montanha">
+                <h3>Imagem 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article> 
+
+            <article class="card-item">
+                <img src="https://gstatic.com" alt="Montanha">
+                <h3>Imagem 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </article> 
+        </section>
+
+        <!-- Bloco 3: Área de Conteúdo Extra (Onde você pensou no Aside) -->
+        <aside class="conteudo-extra">
+            <h3>Informações adicionais</h3>
+            <p>Este bloco se comporta como um aside dentro do layout.</p>
+        </aside> 
+        
+    </main>
+
+    <hr>
+    <footer>Direitos reservados</footer>
     
+    <!-- Link para o arquivo de interatividade JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
