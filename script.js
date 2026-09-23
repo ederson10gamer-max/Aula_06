@@ -7,3 +7,4 @@ btnToggle.addEventListener('click', () => {
    
     sidebar.classList.toggle('oculto');
 });
+// Teste de linha
